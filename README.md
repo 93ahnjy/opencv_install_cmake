@@ -3,13 +3,13 @@
 
 ## 1. 기본 설명
 **1) opencv 4.0.0 설치**<br>
-  https://webnautes.tistory.com/1186
+ * https://webnautes.tistory.com/1186
  
 **2) cuda 9.0, cudnn 7 설치**<br>
-   https://hiseon.me/2018/03/11/cuda-install/
+  * https://hiseon.me/2018/03/11/cuda-install/
  
 **3) nvidia driver 설치**<br>
-   https://hiseon.me/2018/02/17/install_nvidia_driver/
+  * https://hiseon.me/2018/02/17/install_nvidia_driver/
  
 **4) opencv cmake compile 옵션 모음**<br>
 ```
@@ -21,8 +21,8 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB
 ```
 error: ‘FILTER_SCHARR’ was not declared in this scope
 ```
- issue : https://github.com/opencv/opencv_contrib/pull/1915<br>
- 해결   : https://github.com/opencv/opencv_contrib/pull/1915/commits/675134eae93a4ce7c6e5d1214486bf0ca7ab89b2<br>
+* issue : https://github.com/opencv/opencv_contrib/pull/1915<br>
+* 해결   : https://github.com/opencv/opencv_contrib/pull/1915/commits/675134eae93a4ce7c6e5d1214486bf0ca7ab89b2<br>
 
 이거 내 잘못이 아니라 contrib의 modules/cvv/src/qtutil/filter/sobelfilterwidget.cpp의 코드 문제이다.
 
@@ -31,4 +31,4 @@ error: ‘FILTER_SCHARR’ was not declared in this scope
 ```
 fatal error: numpy/ndarrayobject.h: No such file or directory No such file or directory
 ```
- 해결  : cmake -D 설정할 때 python3 경로가 실제와 안맞아서 그렇다. python3 -m site로 반드시 확인해라.
+* 해결  : cmake -D 설정할 때 python3 경로가 실제와 안맞아서 그렇다. python3 -m site로 반드시 확인해라.
