@@ -4,14 +4,19 @@
 <br>
 
 ## 1. 기본 설명
-**1) opencv 4.0.0 설치**<br>
-<pre><code>https://webnautes.tistory.com/1186</code></pre> <br>
+### 1) opencv 4.0.0 설치**
+```
+https://webnautes.tistory.com/1186</code></pre> <br>
+```
+<br>
  
-**2) cuda 9.0, cudnn 7 설치**<br>
+### 2) cuda 9.0, cudnn 7 설치**
 
 ##### (1) 여기있는 대로 cuda 설치
-<pre><code>https://hiseon.me/2018/03/11/cuda-install/</code></pre> <br>
-
+```
+https://hiseon.me/2018/03/11/cuda-install/
+```
+<br>
 
 ##### (2) 환경변수 설정
 ```
