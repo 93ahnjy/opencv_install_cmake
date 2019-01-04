@@ -19,13 +19,13 @@ $ export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
 $ export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/cuda-9.0/lib64
 ``` 
 
-### (3) 위 내용을  영구적으로 설정<br>
+### (3) 위 내용을  영구적으로 설정
 
 ```
 $ gedit .bashrc
 ```
 
-### (4) 확인<br>
+### (4) 확인
 
 ```
 echo $PATH<br>
