@@ -6,7 +6,7 @@ opencv, cuda, cudnn 설치 방법이 잘 설명된 사이트 기록하고, 설�
 ## 1. 기본 설명
 ### 1) opencv 4.0.0 설치
 ```
-https://webnautes.tistory.com/1186</code></pre> <br>
+https://webnautes.tistory.com/1186
 ```
 <br>
  
