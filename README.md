@@ -69,6 +69,11 @@ fatal error: numpy/ndarrayobject.h: No such file or directory No such file or di
 <br>
 <br>
 
+### 3) opnecv4 폴더
+* /usr/local/include/opencv4가 존재해서, .hpp파일들이 경로를 찾지 못하는 경우가 있다. opencv4/opencv2의 opencv2를 opencv4와 같은 위치에 있게 해야 한다.
+<br>
+<br>
+
 ## 3. 결론
  1. python 설치할 때 pip 사용 금지!!! 앞으로도 python 관련 lib 설치할 때 위 블로그 대로 해라.
  2. 이거 하다가 xterm이란 터미널 날렸더니 인터페이스가 아예 먹통이 되었다. 당황하지 말고 ctrl+alt+f1 누르고 ubuntu-desktop 설치.
