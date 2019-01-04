@@ -74,6 +74,7 @@ fatal error: numpy/ndarrayobject.h: No such file or directory No such file or di
 
 ### 4) pkg-config 지원 안함
 * 더 이상 pkg-config는 지원안하므로, 앞으로 libs를 한번에 찾기가 힘
+*  https://github.com/opencv/opencv/issues/13154
 <br>
 <br>
 
