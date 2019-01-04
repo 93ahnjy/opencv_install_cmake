@@ -18,7 +18,9 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB
 
 ## 2. 버그 및 겪은 오류
 **1) namespace 오류**<br>
-```error: ‘FILTER_SCHARR’ was not declared in this scope```<br>
+```
+error: ‘FILTER_SCHARR’ was not declared in this scope
+```
  issue : https://github.com/opencv/opencv_contrib/pull/1915<br>
  해결   : https://github.com/opencv/opencv_contrib/pull/1915/commits/675134eae93a4ce7c6e5d1214486bf0ca7ab89b2<br>
 
@@ -26,5 +28,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB
 
 
 **2) python3.5 경로 오류**<br>
-```fatal error: numpy/ndarrayobject.h: No such file or directory No such file or directory```<br>
-  해결  : cmake -D 설정할 때 python3 경로가 실제와 안맞아서 그렇다. python3 -m site로 반드시 확인해라.
+```
+fatal error: numpy/ndarrayobject.h: No such file or directory No such file or directory
+```
+ 해결  : cmake -D 설정할 때 python3 경로가 실제와 안맞아서 그렇다. python3 -m site로 반드시 확인해라.
