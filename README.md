@@ -51,7 +51,7 @@ error: ‘FILTER_SCHARR’ was not declared in this scope
 * issue : https://github.com/opencv/opencv_contrib/pull/1915 <br>
 * 해결   : https://github.com/opencv/opencv_contrib/pull/1915/commits/675134eae93a4ce7c6e5d1214486bf0ca7ab89b2 <br>
 
-이거 내 잘못이 아니라 contrib의 modules/cvv/src/qtutil/filter/sobelfilterwidget.cpp의 코드 문제이다.<br>
+이거 **내 잘못이 아니라** contrib의 modules/cvv/src/qtutil/filter/sobelfilterwidget.cpp의 코드 문제이다.<br>
 <br>
 
 **2) python3.5 경로 오류**<br>
