@@ -67,7 +67,6 @@ fatal error: numpy/ndarrayobject.h: No such file or directory No such file or di
 ```
 * 해결  : cmake -D 설정할 때 python3 경로가 실제와 안맞아서 그렇다. python3 -m site로 반드시 확인해라.
 <br>
-<br>
 
 ### 3) opnecv4 폴더
 * /usr/local/include/opencv4가 존재해서, .hpp파일들이 경로를 찾지 못하는 경우가 있다. opencv4/opencv2의 opencv2를 opencv4와 같은 위치에 있게 해야 한다.
