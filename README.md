@@ -12,7 +12,7 @@ https://webnautes.tistory.com/1186</code></pre> <br>
  
 ### 2) cuda 9.0, cudnn 7 설치**
 
-##### (1) 여기있는 대로 cuda 설치
+> (1) 여기있는 대로 cuda 설치
 ```
 https://hiseon.me/2018/03/11/cuda-install/
 ```
