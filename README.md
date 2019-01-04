@@ -27,6 +27,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB
 error: ‘FILTER_SCHARR’ was not declared in this scope
 ```
 <br>
+
 * issue : https://github.com/opencv/opencv_contrib/pull/1915 <br>
 * 해결   : https://github.com/opencv/opencv_contrib/pull/1915/commits/675134eae93a4ce7c6e5d1214486bf0ca7ab89b2 <br>
 
