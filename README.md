@@ -9,23 +9,23 @@
  
 **2) cuda 9.0, cudnn 7 설치**<br>
 
-### (1) 여기있는 대로 cuda 설치
+###### (1) 여기있는 대로 cuda 설치
 <pre><code>https://hiseon.me/2018/03/11/cuda-install/</code></pre> <br>
 
 
-### (2) 환경변수 설정
+###### (2) 환경변수 설정
 ```
 $ export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
 $ export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/cuda-9.0/lib64
 ``` 
 
-### (3) 위 내용을  영구적으로 설정
+###### (3) 위 내용을  영구적으로 설정
 
 ```
 $ gedit .bashrc
 ```
 
-### (4) 확인
+###### (4) 확인
 
 ```
 echo $PATH<br>
