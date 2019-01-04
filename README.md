@@ -16,12 +16,15 @@ $ export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
 $ export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64\{LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
 <br>
-
+위 내용을  영구적으로 설정<br>
 ```
-$ gedit .bashrc후 위 내용을  영구적으로 설정</code></pre>
+$ gedit .bashrc
 ```
-확인은 echo $PATH<br>
-
+<br>
+확인<br>
+```
+echo $PATH<br>
+```
 <br>
  
 **3) nvidia driver 설치**<br>
