@@ -26,5 +26,5 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB
 
 
 **2) python3.5 경로 오류**<br>
-```opencv numpy/ndarrayobject.h: No such file or directory```<br>
+```fatal error: numpy/ndarrayobject.h: No such file or directory No such file or directory```<br>
   해결  : cmake -D 설정할 때 python3 경로가 실제와 안맞아서 그렇다. python3 -m site로 반드시 확인해라.
