@@ -74,7 +74,8 @@ fatal error: numpy/ndarrayobject.h: No such file or directory No such file or di
 
 ### 4) pkg-config 지원 안함
 * 더 이상 pkg-config는 지원안하므로, 앞으로 libs를 한번에 찾기가 힘
-
+<br>
+<br>
 
 ## 3. 결론
  1. python 설치할 때 pip 사용 금지!!! 앞으로도 python 관련 lib 설치할 때 위 블로그 대로 해라.
