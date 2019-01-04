@@ -66,3 +66,11 @@ error: ‘FILTER_SCHARR’ was not declared in this scope
 fatal error: numpy/ndarrayobject.h: No such file or directory No such file or directory
 ```
 * 해결  : cmake -D 설정할 때 python3 경로가 실제와 안맞아서 그렇다. python3 -m site로 반드시 확인해라.
+<br>
+
+
+### 3) 결론
+ 1. python 설치할 때 pip 사용 금지!!! 앞으로도 python 관련 lib 설치할 때 위 블로그 대로 해라.
+ 2. 이거 하다가 xterm이란 터미널 날렸더니 인터페이스가 아예 먹통이 되었다. 당황하지 말고 ctrl+alt+f1 누르고 ubuntu-desktop 설치.
+
+
