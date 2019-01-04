@@ -9,6 +9,10 @@
  
 **2) cuda 9.0, cudnn 7 설치**<br>
 <pre><code>https://hiseon.me/2018/03/11/cuda-install/</code></pre> <br>
+<pre><code>$ export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}</code></pre>
+<pre><code>$ export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64\{LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}</code></pre>
+<pre><code>$ gedit .bashrc후 위 내용을  영구적으로 설정</code></pre>
+
  
 **3) nvidia driver 설치**<br>
 <pre><code>https://hiseon.me/2018/02/17/install_nvidia_driver/</code></pre> <br>
