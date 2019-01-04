@@ -5,13 +5,13 @@
 
 ## 1. 기본 설명
 **1) opencv 4.0.0 설치**<br>
-  https://webnautes.tistory.com/1186 <br>
+<pre><code>https://webnautes.tistory.com/1186</code></pre> <br>
  
 **2) cuda 9.0, cudnn 7 설치**<br>
-   https://hiseon.me/2018/03/11/cuda-install/ <br>
+<pre><code>https://hiseon.me/2018/03/11/cuda-install/</code></pre> <br>
  
 **3) nvidia driver 설치**<br>
-   https://hiseon.me/2018/02/17/install_nvidia_driver/ <br>
+<pre><code>https://hiseon.me/2018/02/17/install_nvidia_driver/</code></pre> <br>
  
 **4) opencv cmake compile 옵션 모음**<br>
 ```
