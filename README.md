@@ -35,7 +35,7 @@ sudo nano /etc/environment
 >  **(4) 확인**
 
 ```
-echo $PATH<br>
+echo $PATH
 ```
 <br>
 
