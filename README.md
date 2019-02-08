@@ -51,6 +51,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB
 
 ### 5) anaconda3 설치
 <pre><code>http://sldofvge12.blogspot.com/2018/04/ubuntu-tensorflow-gpu-anaconda-pycharm.html</code></pre> <br>
+근데 이 짓을 하니깐 파이썬 경로가 바뀌어서 tensorflow가 인식이 되지 않았었다. 이 사이트에서 처럼 nano에서 anaconda가 멋대로 추가한 PATH 변수를 # 
 
 ### 6) caffe 설치
 <pre><code>https://hiseon.me/2018/04/23/caffe-build/</code></pre> <br>
