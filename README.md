@@ -49,6 +49,12 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB
 <br>
 <br>
 
+### 5) anaconda3 설치
+<pre><code>http://sldofvge12.blogspot.com/2018/04/ubuntu-tensorflow-gpu-anaconda-pycharm.html</code></pre> <br>
+
+### 6) caffe 설치
+<pre><code>https://hiseon.me/2018/04/23/caffe-build/</code></pre> <br>
+
 ## 2. 버그 및 겪은 오류
 ### 1) namespace 오류
 ```
