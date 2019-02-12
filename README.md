@@ -36,7 +36,7 @@ echo $PATH
 <br>
 
 ### 3) nvidia driver 설치
-<pre><code>https://hiseon.me/2018/02/17/install_nvidia_driver/</code></pre> <br>
+https://hiseon.me/2018/02/17/install_nvidia_driver/<br>
  
 ### 4) opencv cmake compile 옵션 모음
 ```
