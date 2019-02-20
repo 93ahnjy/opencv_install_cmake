@@ -2,7 +2,7 @@
 opencv, cuda, cudnn 설치 방법이 잘 설명된 사이트 기록하고, 설치하면서 겪은 시행착오들 기록
 <br>
 <br> 만일 yolov3 용으로 사용하고 싶으면 반드시, 반드시, 반드시 OPENCV <= 3.4.0 만족해라!!!!
-<br>  : https://github.com/pjreddie/darknet/issues/1072 의 AlexeyAB 댓글 참조
+<br> 관련정보 : https://github.com/pjreddie/darknet/issues/1072 의 AlexeyAB 댓글 참조
 <br>
 
 ## 1. 기본 설명
