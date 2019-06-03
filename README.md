@@ -122,3 +122,9 @@ fatal error: numpy/ndarrayobject.h: No such file or directory No such file or di
  2. 이거 하다가 xterm이란 터미널 날렸더니 인터페이스가 아예 먹통이 되었다. 당황하지 말고 ctrl+alt+f1 누르고 ubuntu-desktop 설치.
 
 
+## 4. 그외
+ 1. https://askubuntu.com/questions/462629/how-to-disable-sticky-edges-in-ubuntu-14-04-ubuntu-13-10-and-earlier-had-a-opti <br>
+  
+   sticky monitor 방지하는 방법. setting에서는 잘 안됨.
+    
+    
