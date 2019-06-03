@@ -19,8 +19,9 @@ opencv, cuda, cudnn 설치 방법이 잘 설명된 사이트 기록하고, 설�
  
 ### 2) cuda 9.0, cudnn 7 설치
 
- 1-1. 여기있는 대로 cuda 설치  --->  https://hiseon.me/2018/03/11/cuda-install/  
- 1-2. cudnn은 여기대로 --> https://yunsangq.github.io/articles/2017-02/Ubuntu-16.04(64bit),-CUDA-8.0,-cuDNN-5.1-Install
+ 1-1. 기존 cuda 완 http://blog.ju-ing.com/2018/04/05/CUDA-8.0-to-9.0/
+ 1-2. 여기있는 대로 cuda 설치  --->  https://hiseon.me/2018/03/11/cuda-install/  
+ 1-3. cudnn은 여기대로 --> https://yunsangq.github.io/articles/2017-02/Ubuntu-16.04(64bit),-CUDA-8.0,-cuDNN-5.1-Install
  
  <br>
  /usr/local/cuda에 cudnn이 존재하고, /usr/local/cuda-9.0, 10.0 등이 cuda 존재. cuda 버전 혼동 때문에 하나 지워야 한다면 여기서 지우자.
