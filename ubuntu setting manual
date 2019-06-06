@@ -1,0 +1,86 @@
+0. 우분투 설치 - GPT로 반드시.
+   그리고 시작부터 봤는데 1TB가 있다고 엉뚱한데 우분투 설치한게 아니니 안심. 그거 mnt된거일 뿐이다.
+
+1. sudo passwd로 su 비번 제대로 정해주기.
+   gparted는 할 필요도 없었다 ㅋㅋㅋ 자동 되어 있음.
+
+2. 크롬 설치
+   1. sudo apt-get install libxss1 libgconf2-4 libappindicator1 libindicator7
+   2. wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb 
+   3. sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+출처 : https://snowdeer.github.io/linux/2018/02/02/ubuntu-16p04-install-chrome/
+
+
+2. ibus 설정.
+
+   1. sudo add-apt-repository ppa:createsc/3beol
+   2. udo apt-get update
+   3. sudo apt-get install ibus ibus-hangul
+   4. system setting --> language support --> update --> 로그아웃후 다시 들어오기
+   5. ibus-setup하면 이제서야 ibus가 생김. 여기에 추가.
+   6. system setting --> text entry --> 좌측 하단에 + 버튼 눌러서 hangul 추가.
+   7. 오른쪽 위 상단에 En을 hangul로 바꾸기. 한영키 설정도 필요음슴.
+
+출처: https://techlog.gurucat.net/288 [하얀쿠아의 이것저것 만들기 Blog]
+
+
+3. nvidia-driver
+   HISEON 한대로 하면 된다. 이번에도 nvidia not communicate 오류 떠서 식겁했는데 reboot하니 잘된다.
+
+
+4. cuda
+   HISEON이 한대로 하면 된다.
+
+nano/env는 다음과 같이.
+
+PATH="/usr/local/cuda-9.0/bin:/home/ahnjaeyoung/bin:/home/ahnjaeyoung/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+LD_LIBRARY_PATH="/usr/local/cuda-9.0/lib64"
+
+
+5. cudnn
+   cuda 9.0만 쓰면 이 방법을 써야 한다.
+
+출처 : https://yunsangq.github.io/articles/2017-02/Ubuntu-16.04(64bit),-CUDA-8.0,-cuDNN-5.1-Install
+파일 자체는 mnt된 hdd안에 있으니 압축해제만 시켜주고 맨 마지막 단계만 진행.
+
+
+
+
+
+6. opencv 설치
+
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=OFF -D WITH_IPP=OFF -D WITH_1394=OFF -D BUILD_WITH_DEBUG_INFO=OFF -D BUILD_DOCS=OFF -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D BUILD_EXAMPLES=OFF -D BUILD_TESTS=OFF -D BUILD_PERF_TESTS=OFF -D WITH_GTK=ON -D OPENCV_EXTRA_MODULES_PATH=/home/ahnjaeyoung/opencv/opencv_contrib-3.4.0/modules -D WITH_V4L=ON -D WITH_FFMPEG=ON -D WITH_XINE=ON -D BUILD_NEW_PYTHON_SUPPORT=ON -D OPENCV_GENERATE_PKGCONFIG=ON -D WITH_CUDA=ON -D CUDA_ARCH_BIN=${ARCH_BIN} -D CUDA_ARCH_PTX="" -D ENABLE_FAST_MATH=ON -D CUDA_FAST_MATH=ON -D WITH_CUBLAS=ON -D WITH_LIBV4L=ON -D WITH_GSTREAMER=ON -D WITH_GSTREAMER_0_10=OFF -D WITH_QT=ON -D WITH_OPENGL=ON -D WITH_NVCUVID=ON -D PYTHON3_INCLUDE_DIR=/usr/include/python3.5m -D PYTHON3_NUMPY_INCLUDE_DIRS=/usr/lib/python3.5/dist-packages/numpy/core/include -D PYTHON3_PACKAGES_PATH=/usr/lib/python3.5/dist-packages -D PYTHON3_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython3.5m.so -D CMAKE_C_COMPILER=/usr/bin/gcc-5 ../
+
+맨 뒤에 컴파일러 관련 추가조건이 있다. 이거때메 자꾸 c++11 is not supported error나 뜨고.. 
+찾아보니 gnu가 낡은 op를 쓴다던가 뭐라던가...
+
+pip3 install opencv-python 도 추가.
+
+
+그리고
+sudo /bin/bash -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'
+sudo ldconfig
+이 두 개 안해주면 lib를 찾지 못한다. 그러면 yolo에서도 higui.so 찾지 못해 사용 불가능.
+
+
+
+
+7. tensorflow-gpu 설치
+  1.13.0버전 이상은 cuda 10버전용이니 tesorflow-gpu==1.12.0으로 설치.
+
+8. pycharm / telegram
+  매우 쉬움. 둘다 tar버전.
+
+
+
+9. anaconda3
+  1. PATH 제멋대로 만드는점 주의
+  2. pytorch 설치
+     https://tensorflow.blog/2018/04/25/pytorch-0-4-0-release/
+
+  3. tensorflow-gpu 설치
+     conda install cudatoolkit
+     conda install -c anaconda tensorflow-gpu
+
+   
